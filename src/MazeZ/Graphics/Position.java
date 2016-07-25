@@ -26,7 +26,7 @@ public class Position {
     public Position add(Position pos) {
         x += pos.x;
         y += pos.y;
-        return pos;
+        return this;
     }
 
     public static Position add(Position p1, Position p2) {
@@ -37,8 +37,8 @@ public class Position {
 
     public Position subtract(Position pos) {
         x -= pos.x;
-        x -= pos.y;
-        return pos;
+        y -= pos.y;
+        return this;
     }
 
     public static Position subtract(Position p1, Position p2) {
