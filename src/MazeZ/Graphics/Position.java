@@ -1,10 +1,11 @@
-package Graphics;
+package MazeZ.Graphics;
 
 /**
  * Created by Andrew Hunsaker on 7/25/16.
  */
 
-public class Position {
+public class Position
+{
     public int x;
     public int y;
 
@@ -26,7 +27,7 @@ public class Position {
     public Position add(Position pos) {
         x += pos.x;
         y += pos.y;
-        return pos;
+        return this;
     }
 
     public static Position add(Position p1, Position p2) {
@@ -37,8 +38,8 @@ public class Position {
 
     public Position subtract(Position pos) {
         x -= pos.x;
-        x -= pos.y;
-        return pos;
+        y -= pos.y;
+        return this;
     }
 
     public static Position subtract(Position p1, Position p2) {
@@ -51,7 +52,6 @@ public class Position {
     public boolean equals(Object object) {
         if (this == object) return true;
         if (object == null || getClass() != object.getClass()) return false;
-        if (!super.equals(object)) return false;
 
         Position position = (Position) object;
 
@@ -70,7 +70,7 @@ public class Position {
 
     @Override
     public String toString() {
-        return "Graphics.Position(" +
+        return "MazeZ.Graphics.Position(" +
                 x +
                 ", " +
                 y +
