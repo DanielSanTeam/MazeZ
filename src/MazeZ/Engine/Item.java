@@ -1,4 +1,4 @@
-package MazeZ.Graphics;
+package MazeZ.Engine;
 
 public class Item
 {
