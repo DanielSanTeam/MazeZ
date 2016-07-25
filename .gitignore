@@ -1,3 +1,6 @@
+## Custom
+#.idea/
+*.*ml
 
 # Created by https://www.gitignore.io/api/intellij,netbeans,java,eclipse
 
@@ -26,7 +29,6 @@
 
 # Mongo Explorer plugin:
 #.idea/mongoSettings.xml
-.idea/
 
 ## File-based project format:
 *.iws
