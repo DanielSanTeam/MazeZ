@@ -1,4 +1,4 @@
-package Graphics;
+package MazeZ.Graphics;
 
 /**
  * Created by Andrew Hunsaker on 7/25/16.
@@ -70,7 +70,7 @@ public class Position {
 
     @Override
     public String toString() {
-        return "Graphics.Position(" +
+        return "MazeZ.Graphics.Position(" +
                 x +
                 ", " +
                 y +
