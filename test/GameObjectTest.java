@@ -1,4 +1,4 @@
-package MazeZ.Engine;
+import MazeZ.Engine.GameObject;
 
 import MazeZ.Graphics.Position;
 import com.sun.tools.javac.api.ClientCodeWrapper;
