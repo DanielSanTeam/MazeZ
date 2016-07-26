@@ -5,7 +5,7 @@ import MazeZ.Graphics.Position;
 /**
  * Created by Tapa on 7/25/16.
  */
-public class GameObject
+public abstract class GameObject
 {
     protected Position mPos;
 
