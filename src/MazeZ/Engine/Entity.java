@@ -9,7 +9,7 @@ import MazeZ.Graphics.RenderWindow;
 /**
  * Created by lukit on 7/25/2016.
  */
-public class Entity extends GameObject implements Drawable
+public abstract class Entity extends GameObject implements Drawable
 {
 	protected int mHealth;
 	protected char mSymbol;
@@ -36,8 +36,9 @@ public class Entity extends GameObject implements Drawable
 
 	public boolean isAlive()
 	{
+		if(mHealth >= 0)
+			return true;
 		return false;
-
 	}
 
 	public void setHealth(int health)
@@ -48,20 +49,15 @@ public class Entity extends GameObject implements Drawable
 	public int getHealth()
 	{
 		return mHealth;
-
 	}
 
 	public char getSymbol()
 	{
-
 		return mSymbol;
-
 	}
 
-	@Override
-	public void draw(RenderWindow target)
+	public char getmSymbol()
 	{
-		// TODO Auto-generated method stub
-		
+		return mSymbol;
 	}
 }
