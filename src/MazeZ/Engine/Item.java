@@ -1,6 +1,6 @@
 package MazeZ.Engine;
 
-public class Item
+public abstract class Item extends Entity
 {
 	private int mID;
 	
