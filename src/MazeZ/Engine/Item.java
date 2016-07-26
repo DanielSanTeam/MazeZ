@@ -8,7 +8,6 @@ public abstract class Item extends Entity
 	
 	public int getId(){
 		return mID;
-			
 	}
 
 }

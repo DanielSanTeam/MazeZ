@@ -17,7 +17,6 @@ public class Config
 
 	private List<Map> maps;
 	private int mCurrentLevel;
-	private int mDeathCount;
 
 	private Config()
 	{

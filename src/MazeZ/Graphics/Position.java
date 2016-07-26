@@ -43,8 +43,8 @@ public class Position
     }
 
     public static Position subtract(Position p1, Position p2) {
-        Position result = new Position();
-        result.subtract(p1).subtract(p2);
+        Position result = new Position(p1);
+        result.subtract(p2);
         return result;
     }
 
