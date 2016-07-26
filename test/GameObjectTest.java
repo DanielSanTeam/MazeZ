@@ -1,4 +1,8 @@
+<<<<<<< HEAD:test/GameObjectTest.java
 package MazeZ;
+=======
+import MazeZ.Engine.GameObject;
+>>>>>>> e8f47564a980a3ff4c18558d02748ee8d1b51c97:test/GameObjectTest.java
 
 import MazeZ.Engine.GameObject;
 import MazeZ.Graphics.Position;
