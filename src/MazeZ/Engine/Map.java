@@ -1,7 +1,7 @@
 package MazeZ.Engine;
 
-import MazeZ.Engine.GameObject;
 import MazeZ.Graphics.Drawable;
+import MazeZ.Graphics.RenderWindow;
 
 /**
  * Created by lukit on 7/25/2016.
