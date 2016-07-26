@@ -1,6 +1,7 @@
 ## Custom
 #.idea/
 *.*ml
+*.mf
 
 # Created by https://www.gitignore.io/api/intellij,netbeans,java,eclipse
 
