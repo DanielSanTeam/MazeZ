@@ -42,6 +42,7 @@ public class Position
         return this;
     }
 
+
     public static Position subtract(Position p1, Position p2) {
         Position result = new Position(p1);
         result.subtract(p2);
