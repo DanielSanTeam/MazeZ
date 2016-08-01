@@ -25,8 +25,9 @@ public class Config
 		maps = new ArrayList<>();
 
 		// Load map files
+		maps.add(new Map("maps/Tutorial.txt"));
 		maps.add(new Map("maps/MazeEddy.txt"));
-		maps.add(new Map("maps/TestMaze.txt"));
+		maps.add(new Map("maps/End.txt"));
 	}
 
 	public void nextLevel()
