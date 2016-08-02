@@ -4,15 +4,13 @@ import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
 
-/**
- * Created by lukit on 7/25/2016.
- */
 public class RenderWindow
 {
 	private char mRenderSpace[][];
 	private final int mWidth;
 	private final int mHeight;
 	private final JTextArea mDisplay;
+	private final Font mFont = new Font("Courier New", Font.PLAIN, 18);
 
 	public RenderWindow(int width, int height)
 	{
@@ -39,7 +37,8 @@ public class RenderWindow
 				DISPLAY_PADDING,
 				DISPLAY_PADDING));
 		mDisplay.setEditable(false);
-		mDisplay.setFont(new Font("Courier New", Font.PLAIN, 18));
+		//mDisplay.setFont(new Font("Courier New", Font.PLAIN, 18));
+		mDisplay.setFont(mFont);
 	}
 
 	public int getRenderWidth()

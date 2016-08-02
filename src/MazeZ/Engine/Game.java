@@ -5,9 +5,6 @@ import MazeZ.Graphics.RenderWindow;
 
 import javax.swing.*;
 
-/**
- * Created by lukit on 7/25/2016.
- */
 public class Game extends JFrame
 {
 	private GameWindow mGameWindow;

@@ -1,9 +1,5 @@
 package MazeZ.Graphics;
 
-/**
- * Created by Andrew Hunsaker on 7/25/16.
- */
-
 public class Position
 {
     public int x;

@@ -3,9 +3,6 @@ package MazeZ.Engine;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by lukit on 7/25/2016.
- */
 public class Config
 {
 	private static Config ourInstance = new Config();

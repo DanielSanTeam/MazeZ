@@ -9,9 +9,6 @@ import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
 
-/**
- * Created by lukit on 7/25/2016.
- */
 public class Player extends Entity
 {
 	private Collection<Item> mItems;
