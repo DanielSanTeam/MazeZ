@@ -10,6 +10,7 @@ public class RenderWindow
 	private final int mWidth;
 	private final int mHeight;
 	private final JTextArea mDisplay;
+	private final Font mFont = new Font("Courier New", Font.PLAIN, 18);
 
 	public RenderWindow(int width, int height)
 	{
@@ -36,7 +37,8 @@ public class RenderWindow
 				DISPLAY_PADDING,
 				DISPLAY_PADDING));
 		mDisplay.setEditable(false);
-		mDisplay.setFont(new Font("Courier New", Font.PLAIN, 18));
+		//mDisplay.setFont(new Font("Courier New", Font.PLAIN, 18));
+		mDisplay.setFont(mFont);
 	}
 
 	public int getRenderWidth()
