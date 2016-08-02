@@ -1,11 +1,12 @@
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-@ * <- Spawn                 @
-@                            @
-@     Welcome to MazeZ       @
-@          made by           @
-@ Eddy, Tapa, Andrew & Rayme @
-@                            @
-@       Exit -> #            @
-@                            @
-@                            @
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@                              @
+@                              @
+@   Welcome to the new *hit    @
+@          game MazeZ          @
+@           made by            @
+@  Eddy, Tapa, Andrew & Rayme  @
+@                              @
+@        Exit -> #             @
+@                              @
+@                              @
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
