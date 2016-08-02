@@ -15,6 +15,7 @@ public class RenderWindow
 	public RenderWindow(int width, int height)
 	{
 		mDisplay = new JTextArea();
+		mDisplay.setFocusable(false);
 		mWidth = width;
 		mHeight = height;
 

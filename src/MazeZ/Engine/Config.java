@@ -13,11 +13,16 @@ public class Config
 	}
 
 	private List<Map> maps;
-	private int mCurrentLevel;
+	int currentLevel;
+
+	public final char BLOCK_CHAR = '@';
+	public final char SECRET_CHAR = 'X';
+	public final char SPAWN_CHAR = '*';
+	public final char END_CHAR = '#';
 
 	private Config()
 	{
-		mCurrentLevel = 0;
+		currentLevel = 0;
 
 		maps = new ArrayList<>();
 
@@ -33,15 +38,15 @@ public class Config
 
 	public void nextLevel()
 	{
-		++mCurrentLevel;
-		if(mCurrentLevel == maps.size())
+		++currentLevel;
+		if(currentLevel == maps.size())
 		{
-			--mCurrentLevel;
+			--currentLevel;
 		}
 	}
 
 	public Map getMap()
 	{
-		return maps.get(mCurrentLevel);
+		return maps.get(currentLevel);
 	}
 }

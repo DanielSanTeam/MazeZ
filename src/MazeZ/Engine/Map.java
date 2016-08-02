@@ -12,9 +12,6 @@ public class Map extends GameObject implements Drawable
 {
 	private char mMapContent[][];
 
-	static final char START_CHAR = '*';
-	static final char END_CHAR = '#';
-
 	public Map(Map m)
 	{
 		int xLength = m.mMapContent.length;
@@ -97,9 +94,27 @@ public class Map extends GameObject implements Drawable
 		}
 	}
 
+	public void hideSpecialChars()
+	{
+		for(int v = 0; v < mMapContent[0].length; ++v)
+		{
+			for(int u = 0; u < mMapContent.length; ++u)
+			{
+				if(mMapContent[u][v] == Config.getInstance().SECRET_CHAR)
+				{
+					mMapContent[u][v] = Config.getInstance().BLOCK_CHAR;
+				}
+				else if(mMapContent[u][v] == Config.getInstance().SPAWN_CHAR)
+				{
+					mMapContent[u][v] = ' ';
+				}
+			}
+		}
+	}
+
 	public Position getStartPosition()
 	{
-		return findChar(START_CHAR);
+		return findChar(Config.getInstance().SPAWN_CHAR);
 	}
 
 	private Position findChar(char c)
