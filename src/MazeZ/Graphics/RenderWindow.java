@@ -38,7 +38,6 @@ public class RenderWindow
 				DISPLAY_PADDING,
 				DISPLAY_PADDING));
 		mDisplay.setEditable(false);
-		//mDisplay.setFont(new Font("Courier New", Font.PLAIN, 18));
 		mDisplay.setFont(mFont);
 	}
 
