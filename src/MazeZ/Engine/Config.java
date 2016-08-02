@@ -28,6 +28,7 @@ public class Config
 		maps.add(new Map("maps/MazeEddy.txt"));
 		maps.add(new Map("maps/MazeDrew.txt"));
 		maps.add(new Map("maps/End.txt"));
+		maps.add(new Map("maps/MazeRandom.txt"));
 	}
 
 	public void nextLevel()
