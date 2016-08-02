@@ -2,9 +2,6 @@ import MazeZ.Graphics.Position;
 
 import static org.junit.Assert.*;
 
-/**
- * Created by Andrew Hunsaker on 7/25/16.
- */
 public class PositionTest {
     private Position p;
 

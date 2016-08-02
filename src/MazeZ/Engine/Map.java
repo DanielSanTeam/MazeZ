@@ -8,9 +8,6 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by lukit on 7/25/2016.
- */
 public class Map extends GameObject implements Drawable
 {
 	private char mMapContent[][];

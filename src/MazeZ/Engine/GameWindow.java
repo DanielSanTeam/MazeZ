@@ -6,9 +6,6 @@ import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
 
-/**
- * Created by lukit on 7/25/2016.
- */
 public class GameWindow extends JPanel
 {
 	private final Dimension mControlPanelSize = new Dimension(600, 200);

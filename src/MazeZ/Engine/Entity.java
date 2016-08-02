@@ -6,9 +6,6 @@ import MazeZ.Graphics.Drawable;
 import MazeZ.Graphics.Position;
 import MazeZ.Graphics.RenderWindow;
 
-/**
- * Created by lukit on 7/25/2016.
- */
 public abstract class Entity extends GameObject implements Drawable
 {
 	protected int mHealth;
