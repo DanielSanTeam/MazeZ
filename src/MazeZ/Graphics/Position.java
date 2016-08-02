@@ -4,7 +4,8 @@ package MazeZ.Graphics;
  * Created by Andrew Hunsaker on 7/25/16.
  */
 
-public class Position {
+public class Position
+{
     public int x;
     public int y;
 
@@ -41,9 +42,10 @@ public class Position {
         return this;
     }
 
+
     public static Position subtract(Position p1, Position p2) {
-        Position result = new Position();
-        result.subtract(p1).subtract(p2);
+        Position result = new Position(p1);
+        result.subtract(p2);
         return result;
     }
 
