@@ -133,19 +133,19 @@ public class Game extends JFrame implements KeyListener
 	{
 		int key = e.getKeyCode();
 
-		if(key == KeyEvent.VK_J)
+		if(key == KeyEvent.VK_J || key == KeyEvent.VK_S)
 		{
 			mPlayer.movement = Player.Move.DOWN;
 		}
-		else if(key == KeyEvent.VK_K)
+		else if(key == KeyEvent.VK_K || key == KeyEvent.VK_W)
 		{
 			mPlayer.movement = Player.Move.UP;
 		}
-		else if(key == KeyEvent.VK_H)
+		else if(key == KeyEvent.VK_H || key == KeyEvent.VK_A)
 		{
 			mPlayer.movement = Player.Move.LEFT;
 		}
-		else if(key == KeyEvent.VK_L)
+		else if(key == KeyEvent.VK_L || key == KeyEvent.VK_D)
 		{
 			mPlayer.movement = Player.Move.RIGHT;
 		}
