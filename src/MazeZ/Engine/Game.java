@@ -18,6 +18,8 @@ public class Game extends JFrame implements KeyListener
 	private Map mCurrentMap;
 	private Map mCanvas;
 
+	private boolean stopInput = false;
+
 	public Game()
 	{
 		// Create game window
@@ -99,6 +101,7 @@ public class Game extends JFrame implements KeyListener
 		}
 		else if (charAtPlayerPosition == Config.getInstance().END_CHAR)
 		{
+			stopInput = true;
 			Config.getInstance().nextLevel();
 			run();
 			return;
@@ -133,21 +136,21 @@ public class Game extends JFrame implements KeyListener
 	{
 		int key = e.getKeyCode();
 
-		if(key == KeyEvent.VK_J || key == KeyEvent.VK_S)
+		if(!stopInput)
 		{
-			mPlayer.movement = Player.Move.DOWN;
-		}
-		else if(key == KeyEvent.VK_K || key == KeyEvent.VK_W)
-		{
-			mPlayer.movement = Player.Move.UP;
-		}
-		else if(key == KeyEvent.VK_H || key == KeyEvent.VK_A)
-		{
-			mPlayer.movement = Player.Move.LEFT;
-		}
-		else if(key == KeyEvent.VK_L || key == KeyEvent.VK_D)
-		{
-			mPlayer.movement = Player.Move.RIGHT;
+			if (key == KeyEvent.VK_J || key == KeyEvent.VK_S)
+			{
+				mPlayer.movement = Player.Move.DOWN;
+			} else if (key == KeyEvent.VK_K || key == KeyEvent.VK_W)
+			{
+				mPlayer.movement = Player.Move.UP;
+			} else if (key == KeyEvent.VK_H || key == KeyEvent.VK_A)
+			{
+				mPlayer.movement = Player.Move.LEFT;
+			} else if (key == KeyEvent.VK_L || key == KeyEvent.VK_D)
+			{
+				mPlayer.movement = Player.Move.RIGHT;
+			}
 		}
 
 		update();
@@ -156,6 +159,6 @@ public class Game extends JFrame implements KeyListener
 	@Override
 	public void keyReleased(KeyEvent e)
 	{
-
+		stopInput = false;
 	}
 }
