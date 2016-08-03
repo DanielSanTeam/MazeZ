@@ -27,13 +27,13 @@ public class Config
 		maps = new ArrayList<>();
 
 		// Load map files
-		maps.add(new Map("maps/Tutorial.txt"));
-		maps.add(new Map("maps/MazeRayme.txt"));
-		maps.add(new Map("maps/MazeTapa.txt"));
-		maps.add(new Map("maps/MazeEddy.txt"));
-		maps.add(new Map("maps/MazeDrew.txt"));
-		maps.add(new Map("maps/End.txt"));
-		maps.add(new Map("maps/MazeRandom.txt"));
+		maps.add(new Map("/maps/Tutorial.txt"));
+		maps.add(new Map("/maps/MazeRayme.txt"));
+		maps.add(new Map("/maps/MazeTapa.txt"));
+		maps.add(new Map("/maps/MazeEddy.txt"));
+		maps.add(new Map("/maps/MazeDrew.txt"));
+		maps.add(new Map("/maps/End.txt"));
+		maps.add(new Map("/maps/MazeBonus.txt"));
 	}
 
 	public void nextLevel()

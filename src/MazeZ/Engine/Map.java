@@ -5,6 +5,7 @@ import MazeZ.Graphics.Position;
 import MazeZ.Graphics.RenderWindow;
 
 import java.io.*;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -31,11 +32,12 @@ public class Map extends GameObject implements Drawable
 
 	public Map(String filename)
 	{
-		File mapfile = new File(filename);
+		//File mapfile = new File(filename);
+		URL mapfile = getClass().getResource(filename);
 
 		List<String> lines = new ArrayList<>();
 
-		try (BufferedReader in = new BufferedReader(new FileReader(mapfile)))
+		try (BufferedReader in = new BufferedReader(new InputStreamReader(mapfile.openStream())))
 		{
 			String line;
 			while((line = in.readLine()) != null)
